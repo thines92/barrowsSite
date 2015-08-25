@@ -58,10 +58,16 @@ body {
 }
 .front-page h1 {
   position: absolute;
+  margin: auto;
   text-align: center;
   font-size: 40px;
   color: white;
   top: 40px;
+  display: block;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
 }
 .front-page img {
   height: 450px;
@@ -86,6 +92,11 @@ body {
   font-size: 40px;
   color: white;
   top: 40px;
+  display: block;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
 }
 .jared-about {
   height: 300px;
@@ -121,6 +132,11 @@ body {
   font-size: 40px;
   color: white;
   top: 40px;
+  display: block;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
 }
 .left-project-img {
   height: 250px;
@@ -171,6 +187,11 @@ body {
   margin: auto;
   color: white;
   top: 40px;
+  display: block;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
 }
 .donate-page p {
   position: absolute;
@@ -213,6 +234,11 @@ body {
   color: white;
   text-align: center;
   top: 40px;
+  display: block;
+  width: 100%;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  padding: 5px;
 }
 .left-column {
   position: absolute;
