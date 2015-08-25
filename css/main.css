@@ -177,20 +177,62 @@ body {
   font-size: 40px;
   color: white;
   text-align: center;
+  top: 20px;
 }
 .left-column {
   position: absolute;
   left: 10%;
   width: 30%;
   height: 40%;
+  top: 40%;
 }
 .left-column div {
   position: absolute;
   left: 10%;
   right: 10%;
 }
+.jeff-email {
+  top: 10%;
+}
+.jeff-email p {
+  top: 20%;
+}
+.anna-email {
+  top: 40%;
+}
+.anna-email p {
+  top: 50%;
+}
 .left-column h3 {
+  position: absolute;
   font-size: 24px;
   color: white;
   text-align: center;
+}
+.left-column p {
+  font-size: 14px;
+  text-align: center;
+  left: 10%;
+  right: 40%;
+  padding-top: 10%;
+}
+.right-column {
+  position: absolute;
+  top: 40%;
+  width: 40%;
+  right: 10%;
+  height: 60%;
+}
+.email-form input , label , textarea {
+  display: block;
+  margin: 5px 0;
+}
+.email-form label {
+  text-align: center;
+}
+.email-form input , textarea {
+  width: 100%;
+}
+.email-form textarea {
+  height: 200px;
 }
