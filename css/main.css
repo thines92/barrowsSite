@@ -14,6 +14,7 @@ body {
   background:     -ms-linear-gradient(90deg, #232526 10%, #414345 90%); /* IE10 */
   background:      -o-linear-gradient(90deg, #232526 10%, #414345 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #232526 10%, #414345 90%); /* W3C */
+  font-family: 'Raleway', sans-serif;
 }
 .center {
   margin: auto;
@@ -26,12 +27,16 @@ body {
 .navi {
   position: fixed;
   top: 0;
-  height: 29px;
-  right: 0;
   left: 0;
+  right: 0;
+  height: 30px;
   padding-top: 5px;
   text-align: center;
-  background-color: white;
+  background: -webkit-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Chrome 10+, Saf5.1+ */
+  background:    -moz-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* FF3.6+ */
+  background:     -ms-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* IE10 */
+  background:      -o-linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* Opera 11.10+ */
+  background:         linear-gradient(90deg, #2BC0E4 10%, #EAECC6 90%); /* W3C */
   z-index: 1;
 }
 .navi li {
@@ -63,7 +68,7 @@ body {
   width: 450px;
   border: 15px groove white;
   padding: 10px;
-  background-color: black;
+  background-color: #B6B6B6;
 }
 .about-page {
   height: 100%;
