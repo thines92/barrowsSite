@@ -128,3 +128,69 @@ body {
   left: 10%;
   right: 10%;
 }
+.donate-page {
+  height: 100%;
+  background-color: #f1da45;
+  position: relative;
+}
+.donate-page h1 {
+  position: absolute;
+  font-size: 40px;
+  text-align: center;
+  margin: auto;
+  color: white;
+  top: 20px;
+}
+.donate-page p {
+  position: absolute;
+  width: 75%;
+  left: 10%;
+  top: 30%;
+  font-size: 20px;
+  padding: 5px;
+  text-align: center;
+}
+.amount-btn {
+  position: absolute;
+  bottom: 15%;
+  left: 37%;
+  font-size: 18px;
+  padding-left: 10px;
+}
+.amount-btn input {
+  margin: 0 5px;
+}
+.donate-btn {
+  position: absolute;
+  height: 26px;
+  width: 92px;
+  bottom: 10%;
+  left: 47%;
+}
+.contact-page {
+  height: 100%;
+  background-color: #f1da45;
+  position: relative;
+}
+.contact-page h1 {
+  position: absolute;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+}
+.left-column {
+  position: absolute;
+  left: 10%;
+  width: 30%;
+  height: 40%;
+}
+.left-column div {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+}
+.left-column h3 {
+  font-size: 24px;
+  color: white;
+  text-align: center;
+}
