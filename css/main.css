@@ -23,12 +23,12 @@ body {
 }
 .container {
   height: 100%;
+  position: relative;
 }
 .navi {
   position: fixed;
   top: 0;
-  left: 0;
-  right: 0;
+  width: 1140px;
   height: 30px;
   padding-top: 5px;
   text-align: center;
