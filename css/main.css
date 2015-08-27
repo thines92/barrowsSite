@@ -63,17 +63,35 @@ body {
   font-size: 40px;
   color: #cf6e40;
   font-weight: 600;
-  top: 40px;
+  top: 50px;
   display: block;
   width: 100%;
   border-top: 2px solid #d44b04;
   border-bottom: 2px solid #d44b04;
   padding: 5px;
 }
-.front-page img {
+.jared-front {
   height: 450px;
   width: 450px;
   border: 15px ridge #d44b04;
+}
+.shabaz-front {
+  position: absolute;
+  height: 225px;
+  width: 225px;
+  border: 10px ridge #d44b04;
+  left: 10.6%;
+  top: 40%;
+  border-right: 0;
+}
+.hat-front {
+  position: absolute;
+  height: 225px;
+  width: 225px;
+  border: 10px ridge #d44b04;
+  right: 10.5%;
+  top: 40%;
+  border-left: 0;
 }
 .about-page {
   height: 100%;
@@ -91,7 +109,7 @@ body {
   font-size: 40px;
   color: #cf6e40;
   font-weight: 600;
-  top: 40px;
+  top: 50px;
   display: block;
   width: 100%;
   border-top: 2px solid #d44b04;
@@ -134,7 +152,7 @@ body {
   font-size: 40px;
   color: #cf6e40;
   font-weight: 600;
-  top: 40px;
+  top: 50px;
   display: block;
   width: 100%;
   border-top: 2px solid #d44b04;
@@ -192,7 +210,7 @@ body {
   margin: auto;
   color: #cf6e40;
   font-weight: 600;
-  top: 40px;
+  top: 50px;
   display: block;
   width: 100%;
   border-top: 2px solid #d44b04;
@@ -242,7 +260,7 @@ body {
   color: #cf6e40;
   font-weight: 600;
   text-align: center;
-  top: 40px;
+  top: 50px;
   display: block;
   width: 100%;
   border-top: 2px solid #d44b04;
