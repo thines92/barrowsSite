@@ -23,6 +23,7 @@ body {
 }
 .container {
   height: 100%;
+  padding: 0;
 }
 .border {
   border: 7px ridge #d44b04;
@@ -58,18 +59,18 @@ body {
   background:         linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* W3C */
   position: relative;
 }
-.front-page h1 {
+.header {
   position: absolute;
   margin: auto;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2em;
   color: #cf6e40;
   font-weight: 600;
-  top: 3.125%;
+  top: 8%;
   display: block;
   width: 100%;
-  border-top: 2px solid #d44b04;
-  border-bottom: 2px solid #d44b04;
+  border-top: .125em solid #d44b04;
+  border-bottom: .125em solid #d44b04;
   padding: 5px;
 }
 .jared-front {
@@ -104,20 +105,6 @@ body {
   background:         linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* W3C */
   position: relative;
 }
-.about-page h1 {
-  position: absolute;
-  text-align: center;
-  margin: auto;
-  font-size: 2.5em;
-  color: #cf6e40;
-  font-weight: 600;
-  top: 3.125em;
-  display: block;
-  width: 100%;
-  border-top: .125em solid #d44b04;
-  border-bottom: .125em solid #d44b04;
-  padding: .3125em;
-}
 .jared-about {
   height: 18.75em;
   width: 25%;
@@ -146,20 +133,6 @@ body {
   background:      -o-linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* W3C */
   position: relative;
-}
-.project-page h1 {
-  position: absolute;
-  text-align: center;
-  margin: auto;
-  font-size: 2.5em;
-  color: #cf6e40;
-  font-weight: 600;
-  top: 3.125em;
-  display: block;
-  width: 100%;
-  border-top: .125em solid #d44b04;
-  border-bottom: .125em solid #d44b04;
-  padding: .3125em;
 }
 .left-project-img {
   height: 15.625em;
@@ -205,20 +178,6 @@ body {
   background:         linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* W3C */
   position: relative;
 }
-.donate-page h1 {
-  position: absolute;
-  font-size: 2.5em;
-  text-align: center;
-  margin: auto;
-  color: #cf6e40;
-  font-weight: 600;
-  top: 3.125em;
-  display: block;
-  width: 100%;
-  border-top: .3125em solid #d44b04;
-  border-bottom: .3125em solid #d44b04;
-  padding: .3125em;
-}
 .donate-page p {
   position: absolute;
   width: 75%;
@@ -255,19 +214,6 @@ body {
   background:      -o-linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* W3C */
   position: relative;
-}
-.contact-page h1 {
-  position: absolute;
-  font-size: 2.5em;
-  color: #cf6e40;
-  font-weight: 600;
-  text-align: center;
-  top: 3.125em;
-  display: block;
-  width: 100%;
-  border-top: .125em solid #d44b04;
-  border-bottom: .125em solid #d44b04;
-  padding: .3125em;
 }
 .left-column {
   position: absolute;
