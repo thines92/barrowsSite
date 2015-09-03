@@ -14,7 +14,7 @@ body {
   background:     -ms-linear-gradient(90deg, #232526 10%, #414345 90%); /* IE10 */
   background:      -o-linear-gradient(90deg, #232526 10%, #414345 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #232526 10%, #414345 90%); /* W3C */
-  font-family: 'Raleway', sans-serif;
+  font-family: normal 'Raleway', sans-serif;
 }
 .center {
   margin: auto;
@@ -23,7 +23,6 @@ body {
 }
 .container {
   height: 100%;
-  position: relative;
 }
 .border {
   border: 7px ridge #d44b04;
@@ -31,8 +30,8 @@ body {
 .navi {
   position: fixed;
   top: 0;
-  width: 1140px;
-  height: 37px;
+  width: inherit;
+  height: 2.3125em;
   padding-top: 5px;
   text-align: center;
   background-color: #d44b04;
@@ -40,7 +39,7 @@ body {
 }
 .navi li {
   list-style: none;
-  font-size: 20px;
+  font-size: 1.25em;
   color: white;
   font-weight: 400;
   padding: 5px;
@@ -63,10 +62,10 @@ body {
   position: absolute;
   margin: auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 2.5em;
   color: #cf6e40;
   font-weight: 600;
-  top: 50px;
+  top: 3.125%;
   display: block;
   width: 100%;
   border-top: 2px solid #d44b04;
@@ -74,24 +73,24 @@ body {
   padding: 5px;
 }
 .jared-front {
-  height: 450px;
-  width: 450px;
-  border: 15px ridge #d44b04;
+  height: 28.125%;
+  width: 28.125%;
+  border: .9375em ridge #d44b04;
 }
 .shabaz-front {
   position: absolute;
-  height: 225px;
-  width: 225px;
-  border: 10px ridge #d44b04;
+  height: 14.0625%;
+  width: 14.0625%;
+  border: .625em ridge #d44b04;
   left: 10.6%;
   top: 40%;
   border-right: 0;
 }
 .hat-front {
   position: absolute;
-  height: 225px;
-  width: 225px;
-  border: 10px ridge #d44b04;
+  height: 14.0625%;
+  width: 14.0625%;
+  border: .625em ridge #d44b04;
   right: 10.5%;
   top: 40%;
   border-left: 0;
@@ -109,21 +108,21 @@ body {
   position: absolute;
   text-align: center;
   margin: auto;
-  font-size: 40px;
+  font-size: 2.5em;
   color: #cf6e40;
   font-weight: 600;
-  top: 50px;
+  top: 3.125em;
   display: block;
   width: 100%;
-  border-top: 2px solid #d44b04;
-  border-bottom: 2px solid #d44b04;
-  padding: 5px;
+  border-top: .125em solid #d44b04;
+  border-bottom: .125em solid #d44b04;
+  padding: .3125em;
 }
 .jared-about {
-  height: 300px;
+  height: 18.75em;
   width: 25%;
   position: absolute;
-  top: 150px;
+  top: 9.375em;
   left: 37.5%;
 }
 .about-page p {
@@ -131,10 +130,10 @@ body {
   position: absolute;
   display: inline-block;
   float: right;
-  top: 460px;
+  top: 28.75em;
   left: 12.5%;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 1.25em;
+  padding: .3125em;
   color: #a25029;
   font-weight: 600;
   text-align: center;
@@ -152,18 +151,18 @@ body {
   position: absolute;
   text-align: center;
   margin: auto;
-  font-size: 40px;
+  font-size: 2.5em;
   color: #cf6e40;
   font-weight: 600;
-  top: 50px;
+  top: 3.125em;
   display: block;
   width: 100%;
-  border-top: 2px solid #d44b04;
-  border-bottom: 2px solid #d44b04;
-  padding: 5px;
+  border-top: .125em solid #d44b04;
+  border-bottom: .125em solid #d44b04;
+  padding: .3125em;
 }
 .left-project-img {
-  height: 250px;
+  height: 15.625em;
   width: 20%;
   position: absolute;
   left: 0;
@@ -177,20 +176,20 @@ body {
   right: 25%;
   top: 25%;
   display: inline-block;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 2.5em;
+  padding: .3125em;
   color: #a25029;
   font-weight: 600;
 }
 .right-project-img {
-  height: 250px;
+  height: 15.625em;
   width: 20%;
   right: 0;
   position: absolute;
   top: 30%;
 }
 .bottom-project-img {
-  height: 200px;
+  height: 12.5em;
   width: 80%;
   position: absolute;
   top: 70%;
@@ -208,25 +207,25 @@ body {
 }
 .donate-page h1 {
   position: absolute;
-  font-size: 40px;
+  font-size: 2.5em;
   text-align: center;
   margin: auto;
   color: #cf6e40;
   font-weight: 600;
-  top: 50px;
+  top: 3.125em;
   display: block;
   width: 100%;
-  border-top: 2px solid #d44b04;
-  border-bottom: 2px solid #d44b04;
-  padding: 5px;
+  border-top: .3125em solid #d44b04;
+  border-bottom: .3125em solid #d44b04;
+  padding: .3125em;
 }
 .donate-page p {
   position: absolute;
   width: 75%;
   left: 10%;
   top: 35%;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 2.5em;
+  padding: .3125em;
   text-align: center;
   color: #a25029;
   font-weight: 600;
@@ -235,16 +234,16 @@ body {
   position: absolute;
   top: 60%;
   left: 37%;
-  font-size: 18px;
-  padding-left: 10px;
+  font-size: 1.125;
+  padding-left: .625em;
 }
 .amount-btn input {
-  margin: 0 5px;
+  margin: 0 .3125;
 }
 .donate-btn {
   position: absolute;
-  height: 26px;
-  width: 92px;
+  height: 1.625em;
+  width: 5.75em;
   top: 65%;
   left: 47%;
 }
@@ -259,16 +258,16 @@ body {
 }
 .contact-page h1 {
   position: absolute;
-  font-size: 40px;
+  font-size: 2.5em;
   color: #cf6e40;
   font-weight: 600;
   text-align: center;
-  top: 50px;
+  top: 3.125em;
   display: block;
   width: 100%;
-  border-top: 2px solid #d44b04;
-  border-bottom: 2px solid #d44b04;
-  padding: 5px;
+  border-top: .125em solid #d44b04;
+  border-bottom: .125em solid #d44b04;
+  padding: .3125em;
 }
 .left-column {
   position: absolute;
@@ -296,12 +295,12 @@ body {
 }
 .left-column h3 {
   position: absolute;
-  font-size: 24px;
+  font-size: 1.5em;
   color: white;
   text-align: center;
 }
 .left-column p {
-  font-size: 14px;
+  font-size: .875em;
   text-align: center;
   left: 10%;
   right: 40%;
@@ -316,7 +315,7 @@ body {
 }
 .email-form input , label , textarea {
   display: block;
-  margin: 5px 0;
+  margin: .3125em 0;
 }
 .email-form label {
   text-align: center;
@@ -325,5 +324,5 @@ body {
   width: 100%;
 }
 .email-form textarea {
-  height: 200px;
+  height: 12.5em;
 }
