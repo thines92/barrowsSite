@@ -38,6 +38,16 @@ body {
   background-color: #d44b04;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .navi {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 465px) {
+  .navi ul > li {
+    font-size: .75em;
+  }
+}
 .navi li {
   list-style: none;
   font-size: 1.25em;
@@ -151,7 +161,7 @@ body {
   right: 17.5%;
   top: 25%;
   display: inline-block;
-  font-size: 1.25em;
+  font-size: 1em;
   padding: .3125em;
   color: #a25029;
   font-weight: 600;
