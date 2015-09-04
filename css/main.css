@@ -150,6 +150,20 @@ body {
   font-weight: 600;
   text-align: center;
 }
+@media screen and (max-width: 650px) and (min-width:408px) {
+  .about-page p {
+    top: 50%;
+    width: 95%;
+    left: 2.5%;
+  }
+}
+@media screen and (max-width: 407px) {
+  .about-page p {
+    top: 41.5%;
+    width: 95%;
+    left: 2.5%;
+  }
+}
 .project-page {
   height: 100%;
   background: -webkit-linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* Chrome 10+, Saf5.1+ */
