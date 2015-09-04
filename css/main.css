@@ -188,7 +188,8 @@ body {
   right: 17.5%;
   top: 25%;
   display: inline-block;
-  font-size: 1em;
+  font-size: 1.25em;
+  line-height: 1.25em;
   padding: .3125em;
   color: #a25029;
   font-weight: 600;
@@ -201,12 +202,48 @@ body {
   top: 30%;
 }
 .bottom-project-img {
-  height: 8em;
+  height: 15%;
   width: 80%;
   position: absolute;
   bottom: 5%;
   left: 10%;
   right: 10%;
+}
+@media screen and (max-width: 990px) {
+  .left-project-img ,
+  .right-project-img ,
+  .bottom-project-img {
+    width: 15%;
+    height: auto;
+    bottom: 15%;
+    top: 85%;
+  }
+  .right-project-img {
+    right: 5%;
+  }
+  .bottom-project-img {
+    left: 45%;
+  }
+  .project-page p {
+    width: 95%;
+    left:2.5%;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width:512px) {
+  .project-page p {
+    font-size: .75em;
+  }
+  .left-project-img ,
+  .right-project-img ,
+  .bottom-project-img {
+    top: 80%;
+  }
+}
+@media screen and (max-height:575px) {
+  .project-page p {
+    font-size: .6em;
+  }
 }
 .donate-page {
   height: 100%;
