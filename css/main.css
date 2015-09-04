@@ -24,6 +24,7 @@ body {
 .container {
   height: 100%;
   padding: 0;
+  position: relative;
 }
 .border {
   border: 7px ridge #d44b04;
@@ -108,6 +109,18 @@ body {
   right: 14.1%;
   top: 40%;
   border-left: 0;
+}
+@media screen and (max-width:700px) {
+  .shabaz-front ,
+  .hat-front {
+    display: none;
+  }
+  .jared-front {
+    width: 40%;
+    height: auto;
+    top: 40%;
+    bottom: 30%;
+  }
 }
 .about-page {
   height: 100%;
