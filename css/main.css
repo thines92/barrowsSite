@@ -32,7 +32,7 @@ body {
   background:         linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* W3C */
 }
 .border {
-  border: 7px ridge #d44b04;
+  border: 1px ridge #d44b04;
 }
 .navi {
   position: relative;
@@ -67,7 +67,7 @@ body {
   color: white;
 }
 .front-page {
-  height: 100%;
+  height: auto;
   position: relative;
 }
 .header {
@@ -84,42 +84,47 @@ body {
   border-bottom: .125em solid #d44b04;
   padding: 5px;
 }
+.front-images {
+  margin-top: 5em;
+  width: 100%;
+  display:block;
+  position: relative;
+  margin-left: 12%;
+}
+.front-images div {
+  display: inline-block;
+}
+.jared {
+  width: 35%;
+}
 .jared-front {
-  position: absolute;
-  left: 32.5%;
-  top: 27.5%;
-  height: 60%;
-  width: 34.1%;
-  border: .9375em ridge #d44b04;
+  position: relative;
+  height: auto;
+  width: 100%;
+  border: 10px ridge #d44b04;
+}
+.shabaz {
+  width: 20%;
 }
 .shabaz-front {
-  position: absolute;
-  height: 35%;
-  width: 19.2%;
-  border: .625em ridge #d44b04;
-  left: 13.3%;
-  top: 40%;
-  border-right: 0;
+  position: relative;
+  height: auto;
+  width: 100%;
+  border: 5px ridge #d44b04;
+}
+.hat {
+  width: 20%;
 }
 .hat-front {
-  position: absolute;
-  height: 35%;
-  width: 19.2%;
-  border: .625em ridge #d44b04;
-  right: 14.1%;
-  top: 40%;
-  border-left: 0;
+  position: relative;
+  height: auto;
+  width: 100%;
+  border: 5px ridge #d44b04;
 }
-@media screen and (max-width:700px) {
-  .shabaz-front ,
-  .hat-front {
-    display: none;
-  }
-  .jared-front {
-    width: 40%;
-    height: auto;
-    top: 40%;
-    bottom: 30%;
+@media screen and (min-width: 480px) {
+  .front-images div {
+    display: inline-block;
+    margin: 0;
   }
 }
 .about-page {
@@ -140,9 +145,9 @@ body {
   margin-left: 40%;
 }
 .about-page p {
-  width: 90%;
+  width: 80%;
   position: relative;
-  font-size: 1em;
+  font-size: 1.5em;
   color: #a25029;
   font-weight: 600;
   text-align: center;
@@ -180,19 +185,20 @@ body {
   position: relative;
 }
 .bottom-project-img {
-  height: 15%;
+  height: 20%;
   width: 20%;
   position: relative;
 }
 .project-page p {
   text-align: center;
-  width: 65%;
+  width: 80%;
   position: relative;
-  font-size: 1em;
+  font-size: 1.5em;
   line-height: 1.25em;
   color: #a25029;
   font-weight: 600;
   margin: auto;
+  padding-bottom: 10%;
 }
 .donate-page {
   height: auto;
@@ -206,8 +212,8 @@ body {
 }
 .donate-page p {
   position: relative;
-  width: 90%;
-  font-size: 1.25em;
+  width: 80%;
+  font-size: 1.5em;
   line-height: 1.25em;
   text-align: center;
   color: #a25029;
@@ -219,14 +225,15 @@ body {
 .dropdown-list {
   position: relative;
   font-size: 1.125;
-  margin-left: 45%;
+  margin-left: 47%;
   margin-top: 10%;
 }
 .donate-btn {
   position: relative;
-  height: 1.625em;
-  width: 5.75em;
-  margin-left: 41.5%;
+  height: auto;
+  width: 10%;
+  min-width: 80px;
+  margin-left: 45%;
   margin-top: 5%;
 }
 .contact-page {
@@ -243,7 +250,7 @@ body {
   width: 50%;
   height: auto;
   float: left;
-  padding-top: 15em;
+  padding-top: 14em;
 }
 .left-column h3 {
   position: relative;
