@@ -14,7 +14,7 @@ body {
   background:     -ms-linear-gradient(90deg, #232526 10%, #414345 90%); /* IE10 */
   background:      -o-linear-gradient(90deg, #232526 10%, #414345 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #232526 10%, #414345 90%); /* W3C */
-  font-family: 'Raleway', sans-serif;
+  font-family: normal 'Raleway', sans-serif;
 }
 .center {
   margin: auto;
@@ -23,6 +23,7 @@ body {
 }
 .container {
   height: 100%;
+  padding: 0;
   position: relative;
 }
 .border {
@@ -31,16 +32,26 @@ body {
 .navi {
   position: fixed;
   top: 0;
-  width: 1140px;
-  height: 37px;
+  width: inherit;
+  height: 2.3125em;
   padding-top: 5px;
   text-align: center;
   background-color: #d44b04;
   z-index: 1;
 }
+@media screen and (max-width: 768px) {
+  .navi {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 465px) {
+  .navi ul > li {
+    font-size: .75em;
+  }
+}
 .navi li {
   list-style: none;
-  font-size: 20px;
+  font-size: 1.25em;
   color: white;
   font-weight: 400;
   padding: 5px;
@@ -59,42 +70,57 @@ body {
   background:         linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* W3C */
   position: relative;
 }
-.front-page h1 {
+.header {
   position: absolute;
   margin: auto;
   text-align: center;
-  font-size: 40px;
+  font-size: 2em;
   color: #cf6e40;
   font-weight: 600;
-  top: 50px;
+  top: 2em;
   display: block;
   width: 100%;
-  border-top: 2px solid #d44b04;
-  border-bottom: 2px solid #d44b04;
+  border-top: .125em solid #d44b04;
+  border-bottom: .125em solid #d44b04;
   padding: 5px;
 }
 .jared-front {
-  height: 450px;
-  width: 450px;
-  border: 15px ridge #d44b04;
+  position: absolute;
+  left: 32.5%;
+  top: 27.5%;
+  height: 60%;
+  width: 34.1%;
+  border: .9375em ridge #d44b04;
 }
 .shabaz-front {
   position: absolute;
-  height: 225px;
-  width: 225px;
-  border: 10px ridge #d44b04;
-  left: 10.6%;
+  height: 35%;
+  width: 19.2%;
+  border: .625em ridge #d44b04;
+  left: 13.3%;
   top: 40%;
   border-right: 0;
 }
 .hat-front {
   position: absolute;
-  height: 225px;
-  width: 225px;
-  border: 10px ridge #d44b04;
-  right: 10.5%;
+  height: 35%;
+  width: 19.2%;
+  border: .625em ridge #d44b04;
+  right: 14.1%;
   top: 40%;
   border-left: 0;
+}
+@media screen and (max-width:700px) {
+  .shabaz-front ,
+  .hat-front {
+    display: none;
+  }
+  .jared-front {
+    width: 40%;
+    height: auto;
+    top: 40%;
+    bottom: 30%;
+  }
 }
 .about-page {
   height: 100%;
@@ -105,39 +131,43 @@ body {
   background:         linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* W3C */
   position: relative;
 }
-.about-page h1 {
-  position: absolute;
-  text-align: center;
-  margin: auto;
-  font-size: 40px;
-  color: #cf6e40;
-  font-weight: 600;
-  top: 50px;
-  display: block;
-  width: 100%;
-  border-top: 2px solid #d44b04;
-  border-bottom: 2px solid #d44b04;
-  padding: 5px;
-}
 .jared-about {
-  height: 300px;
-  width: 25%;
+  height: auto;
+  max-height: 200px;
+  width: 20%;
   position: absolute;
-  top: 150px;
-  left: 37.5%;
+  top: 25%;
+  left: 40%;
 }
 .about-page p {
   width: 75%;
   position: absolute;
-  display: inline-block;
-  float: right;
-  top: 460px;
+  top: 60%;
   left: 12.5%;
-  font-size: 20px;
-  padding: 5px;
+  font-size: .85em;
+  padding: .3125em;
   color: #a25029;
   font-weight: 600;
   text-align: center;
+}
+@media screen and (max-width: 650px) and (min-width:408px) {
+  .about-page p {
+    top: 50%;
+    width: 95%;
+    left: 2.5%;
+  }
+}
+@media screen and (max-width: 407px) {
+  .about-page p {
+    top: 41.5%;
+    width: 95%;
+    left: 2.5%;
+  }
+}
+@media screen and (max-width:345px) {
+  .about-page p {
+    font-size: .6em;
+  }
 }
 .project-page {
   height: 100%;
@@ -148,54 +178,77 @@ body {
   background:         linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* W3C */
   position: relative;
 }
-.project-page h1 {
-  position: absolute;
-  text-align: center;
-  margin: auto;
-  font-size: 40px;
-  color: #cf6e40;
-  font-weight: 600;
-  top: 50px;
-  display: block;
-  width: 100%;
-  border-top: 2px solid #d44b04;
-  border-bottom: 2px solid #d44b04;
-  padding: 5px;
-}
 .left-project-img {
-  height: 250px;
-  width: 20%;
+  height: auto;
+  width: 15%;
   position: absolute;
   left: 0;
   top: 30%;
 }
 .project-page p {
   text-align: center;
-  width: 50%;
+  width: 65%;
   position: absolute;
-  left: 25%;
-  right: 25%;
+  left: 17.5%;
+  right: 17.5%;
   top: 25%;
   display: inline-block;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 1em;
+  line-height: 1.25em;
+  padding: .3125em;
   color: #a25029;
   font-weight: 600;
 }
 .right-project-img {
-  height: 250px;
-  width: 20%;
+  height: auto;
+  width: 15%;
   right: 0;
   position: absolute;
   top: 30%;
 }
 .bottom-project-img {
-  height: 200px;
+  height: 15%;
   width: 80%;
   position: absolute;
-  top: 70%;
+  bottom: 5%;
   left: 10%;
   right: 10%;
+}
+@media screen and (max-width: 990px) {
+  .left-project-img ,
+  .right-project-img ,
+  .bottom-project-img {
+    width: 15%;
+    height: auto;
+    bottom: 15%;
+    top: 85%;
+  }
+  .right-project-img {
+    right: 5%;
+  }
+  .bottom-project-img {
+    left: 45%;
+  }
+  .project-page p {
+    width: 95%;
+    left:2.5%;
+    font-size: 1.5em;
+  }
+}
+@media screen and (max-width:512px) {
+  .project-page p {
+    font-size: .75em;
+  }
+  .left-project-img ,
+  .right-project-img ,
+  .bottom-project-img {
+    top: 80%;
+  }
+}
+@media screen and (max-height:575px) {
+  .project-page p {
+    font-size: .6em;
+  }
 }
 .donate-page {
   height: 100%;
@@ -206,27 +259,13 @@ body {
   background:         linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* W3C */
   position: relative;
 }
-.donate-page h1 {
-  position: absolute;
-  font-size: 40px;
-  text-align: center;
-  margin: auto;
-  color: #cf6e40;
-  font-weight: 600;
-  top: 50px;
-  display: block;
-  width: 100%;
-  border-top: 2px solid #d44b04;
-  border-bottom: 2px solid #d44b04;
-  padding: 5px;
-}
 .donate-page p {
   position: absolute;
   width: 75%;
   left: 10%;
   top: 35%;
-  font-size: 20px;
-  padding: 5px;
+  font-size: 1.25em;
+  padding: .3125em;
   text-align: center;
   color: #a25029;
   font-weight: 600;
@@ -234,19 +273,42 @@ body {
 .amount-btn {
   position: absolute;
   top: 60%;
-  left: 37%;
-  font-size: 18px;
-  padding-left: 10px;
+  left: 25%;
+  font-size: 1.125;
+  padding-left: .625em;
 }
 .amount-btn input {
-  margin: 0 5px;
+  margin: 0 .3125;
 }
 .donate-btn {
   position: absolute;
-  height: 26px;
-  width: 92px;
+  height: 1.625em;
+  width: 5.75em;
   top: 65%;
-  left: 47%;
+  left: 42%;
+}
+@media screen and (max-width:764px) {
+  .donate-page p {
+    width: 95%;
+    left:2.5%;
+    top:20%;
+  }
+}
+@media screen and (max-width:465px) {
+  .amount-btn {
+    top: 70%;
+    left: 15%;
+  }
+  .donate-btn {
+    top: 75%;
+    left: 36.5%;
+  }
+}
+@media screen and (max-width:374px) {
+  .donate-page p {
+    font-size: .75em;
+    top: 30%;
+  }
 }
 .contact-page {
   height: 100%;
@@ -256,19 +318,6 @@ body {
   background:      -o-linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* Opera 11.10+ */
   background:         linear-gradient(90deg, #FF8008 10%, #FFC837 90%); /* W3C */
   position: relative;
-}
-.contact-page h1 {
-  position: absolute;
-  font-size: 40px;
-  color: #cf6e40;
-  font-weight: 600;
-  text-align: center;
-  top: 50px;
-  display: block;
-  width: 100%;
-  border-top: 2px solid #d44b04;
-  border-bottom: 2px solid #d44b04;
-  padding: 5px;
 }
 .left-column {
   position: absolute;
@@ -296,12 +345,12 @@ body {
 }
 .left-column h3 {
   position: absolute;
-  font-size: 24px;
+  font-size: 1.5em;
   color: white;
   text-align: center;
 }
 .left-column p {
-  font-size: 14px;
+  font-size: .875em;
   text-align: center;
   left: 10%;
   right: 40%;
@@ -316,7 +365,7 @@ body {
 }
 .email-form input , label , textarea {
   display: block;
-  margin: 5px 0;
+  margin: .3125em 0;
 }
 .email-form label {
   text-align: center;
@@ -325,5 +374,14 @@ body {
   width: 100%;
 }
 .email-form textarea {
-  height: 200px;
+  height: 12.5em;
+}
+@media screen and (max-width: 500px) {
+  .left-column div {
+    font-size: .75em;
+  }
+  .left-column p {
+    font-size: .6em;
+    padding-top: 50%;
+  }
 }
